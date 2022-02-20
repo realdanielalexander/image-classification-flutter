@@ -6,14 +6,33 @@ A sample model has been provided to classify cats vs. dogs.
 ## Instructions to use on your tflite model
 
 1. Clone repository
-2. Change the model in assets/tflite/[name].tflite
-3. Change the txt file in assets to represent your classes (see example below).
-4. Add both the .tflite and .txt to pubspec.yaml under assets:
-5. You're good to go!
+2. Modify the model in assets/tflite/[name].tflite
+3. Modify the class names in assets/tflite/[name].txt represent your classes (see example below).
+4. Modify both [name].tflite and [name].txt to pubspec.yaml under assets (see example below).
+5. Change the loadModel function in lib/main.dart to load your [name].tflite and [name].yaml (see example below).
+6. You're good to go!
 
-## model.txt
+## cats_dogs.txt
 
 ```
 Cat
 Dog
+```
+
+## pubspec.yaml
+
+```
+assets {
+    - assets/tflite/[name].tflite
+    - assets/tflite/[name].txt
+}
+```
+
+## lib/main.dart
+
+```
+String res = await Tflite.loadModel(
+    model: "assets/tflite/[name].tflite",
+    labels: "assets/tflite/[name].txt",
+) ?? '';
 ```
