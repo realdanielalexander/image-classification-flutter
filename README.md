@@ -10,8 +10,8 @@ A sample model has been provided to classify cats vs. dogs.
 1. Install flutter & clone repository.
 2. Modify the model in assets/tflite/[name].tflite.
 3. Modify the class names in assets/tflite/[name].txt represent your classes (see example below).
-4. Modify both [name].tflite and [name].txt to pubspec.yaml under assets (see example below).
-5. Change the loadModel function in lib/main.dart to load your [name].tflite and [name].yaml (see example below).
+4. Modify both [name].tflite and [name].txt in pubspec.yaml (see example below).
+5. Change the loadModel function in lib/main.dart to load your [name].tflite and [name].txt (see example below).
 6. Run Flutter app. The tflite package uses v1 embeddings so we need to pass in --ignore-deprecation.
 
 ```
