@@ -1,16 +1,19 @@
-# object_classification
+# Flutter Image Classification
 
-This app classifies [object]
+This app classifies images based on any TFLite image classification model
+A sample
 
-## Getting Started
+## Instructions to use on your model
 
-This project is a starting point for a Flutter application.
+1. Clone repository
+2. Change the model in assets/tflite/[name].tflite
+3. Change the txt file in assets to represent your classes (see example below).
+4. Add both the .tflite and .txt to pubspec.yaml under assets:
+5. You're good to go!
 
-A few resources to get you started if this is your first Flutter project:
+## model.txt
 
-- [Lab: Write your first Flutter app](https://flutter.dev/docs/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://flutter.dev/docs/cookbook)
-
-For help getting started with Flutter, view our
-[online documentation](https://flutter.dev/docs), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+```
+Cat
+Dog
+```
