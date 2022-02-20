@@ -3,6 +3,8 @@
 This app classifies images based on any TFLite image classification model.
 A sample model has been provided to classify cats vs. dogs.
 
+![Alt text](sample.jpg?raw=true 'Sample')
+
 ## Instructions to use on your tflite model
 
 1. Clone repository
@@ -40,5 +42,3 @@ String res = await Tflite.loadModel(
     labels: "assets/tflite/[name].txt",
 ) ?? '';
 ```
-
-![Alt text](sample.jpg?raw=true 'Sample')
