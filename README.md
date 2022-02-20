@@ -1,9 +1,9 @@
 # Flutter Image Classification
 
-This app classifies images based on any TFLite image classification model
-A sample
+This app classifies images based on any TFLite image classification model.
+A sample model has been provided to classify cats vs. dogs.
 
-## Instructions to use on your model
+## Instructions to use on your tflite model
 
 1. Clone repository
 2. Change the model in assets/tflite/[name].tflite
