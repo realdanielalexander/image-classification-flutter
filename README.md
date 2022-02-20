@@ -10,7 +10,11 @@ A sample model has been provided to classify cats vs. dogs.
 3. Modify the class names in assets/tflite/[name].txt represent your classes (see example below).
 4. Modify both [name].tflite and [name].txt to pubspec.yaml under assets (see example below).
 5. Change the loadModel function in lib/main.dart to load your [name].tflite and [name].yaml (see example below).
-6. You're good to go!
+6. Run Flutter app. The tflite package uses v1 embeddings so we need to pass in --ignore-deprecation
+
+```
+flutter run --ignore-deprecation
+```
 
 ## cats_dogs.txt
 
@@ -36,3 +40,5 @@ String res = await Tflite.loadModel(
     labels: "assets/tflite/[name].txt",
 ) ?? '';
 ```
+
+![Alt text](sample.jpg?raw=true 'Sample')
